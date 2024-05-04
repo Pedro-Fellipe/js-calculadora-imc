@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>PF | Calcule seu IMC</title>
+  </head>
+  <body>
+    <section class="calculo-imc">
+      <h1>Calcule seu IMC</h1>
+      <br />
+      <form name="imcForm" action="#">
+        <div class="form-floating mb-3">
+          <label class="peso" for="floatingInput">Peso:</label>
+          <input type="number" step="any" class="form-control" id="peso" placeholder="Digite seu peso" />
+        </div>
+        <br />
+
+        <div class="form-floating">
+          <label for="floatingPassword">Altura:</label>
+          <input type="number" step="any" class="form-control" id="altura" placeholder="Digite sua altura " />
+        </div>
+        <br />
+
+        <button class="btn" onclick="calcular()">Calcular</button>
+      </form>
+      <br />
+      <span id="resultado"></span>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
